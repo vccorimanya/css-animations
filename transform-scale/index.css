@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: system-ui;
+    
+
+}
+
+.container{
+    border: 1px solid red;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 10px 0px rgb(192, 55, 151);
+}
+
+.container:hover .cuadrado{
+  /* Se aplica de 0 a 1 donde 1 es su tamaño original*/
+ /*  transform: scale(2); */
+ /* también se puede aplicar en los ejes x e y */
+    transform: scale(2,.5);
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #7dc900;
+    margin: 20px;
+    transition: .3s;
+}

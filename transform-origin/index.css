@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: system-ui;
+}
+
+.container{
+    border: 1px solid red;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 10px 0px rgb(192, 55, 151);
+}
+
+.container:hover .cuadrado{
+    /* skew se usa para cesgar elemtos */
+    /* transform: skew(x, y); */
+    /* transform: skew(25deg, 25deg); */
+    /* transform: skew(25deg, 25deg); */
+
+    /* cambiand el Origen de las tranformaciones  */
+   /*  transform-origin: bottom right;
+    transform: rotateZ(-45deg);
+ */
+    transform-origin: 50% 100%;
+    transform: rotateZ(180deg)
+}
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #7dc900;
+    margin: 20px;
+    transition: .3s;
+}
